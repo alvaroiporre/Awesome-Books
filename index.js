@@ -36,3 +36,9 @@ btnAdd.addEventListener('click', (event) => {
     localStorage.setItem('id', id);
     updateBooks();
 });
+
+function remove(id) {
+    books = books.filter(element => element.id !== id);
+    localStorage.setItem('books', JSON.stringify(books));
+    updateBooks();
+}
