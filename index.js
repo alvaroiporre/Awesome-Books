@@ -14,6 +14,7 @@ function updateBooks() {
                 <p class="title">${book.title}</p>
                 <p class="author">${book.author}</p>
                 <input class="btn-remove" onclick=remove(${book.id}) type="button" value="Remove">
+                <hr>
             </div>
         `;
   });
