@@ -12,12 +12,19 @@
   width: 80%;
 }
 
-.book-1 {
+.book {
+  align-items: center;
   padding: 7px;
   display: flex;
   gap: 5px;
+}
+
+.book-1 {
   background-color: rgb(224, 218, 218);
-  align-items: center;
+}
+
+.book-0 {
+  background-color: rgb(150, 146, 146);
 }
 
 .span-remove {
@@ -39,9 +46,8 @@
 
 .btn-remove {
   height: 20px;
-  margin-right: 0px;
+  margin-right: 0;
   box-shadow: -3px 3px 3px;
-
 }
 
 .add-book {
@@ -61,7 +67,7 @@
   margin-top: 5px;
   display: flex;
   flex-direction: column;
-  gap:7px;
+  gap: 7px;
 }
 
 .form-add-btn {
@@ -73,4 +79,3 @@
   display: flex;
   justify-content: end;
 }
-
