@@ -35,9 +35,7 @@ class Books {
     }
 
     remove(ids) {
-        console.log('remove', ids);
         this.bookList = this.bookList.filter((element) => element.id !== ids);
-        console.log('list', this.bookList);
         this.saveBooks();
         this.updateBooks();
     }
@@ -65,6 +63,4 @@ btnAdd.addEventListener('click', (event) => {
     inputAuthor.value = '';
   
 });
-
-
 
