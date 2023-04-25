@@ -6,23 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome Books</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/8361b8a285.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>Awesome Books</h1>
+        <h1 class="page-title">All awesome books</h1>
     </header>
     <main>
-        <section class="books" id="books">
-            
-        </section>
+        <div class="all-books">
+            <section class="books" id="books">
+                    <div class="book-1">
+                        <p class="title">Title</p>
+                        <p class="title">by</p>
+                        <p class="author">Author</p>
+                        <span class="span-remove"><input class="btn-remove" type="button" value="Remove"></span>
+                    </div>
+                    <div class="book-2">
+                        <p class="title">Title</p>
+                        <p class="title">by</p>
+                        <p class="author">Author</p>
+                        <span class="span-remove"><input class="btn-remove" type="button" value="Remove"></span>
+                    </div>
+            </section>
+        </div>
         <section class="add-book" id="add-book">
-            <form action="" method="POST">
-                <input id="input-title" type="text" placeholder="Title"><br>
-                <input id="input-author" type="text" placeholder="Author"><br>
-                <input id="btn-add" type="submit" value="Add">
-            </form>
+            <i class="fa-thin fa-horizontal-rule"></i>
+            <h2 class="ad-new-book">Add a new book</h2>
+                <form action="" method="POST" class="form-elements">
+                    <input id="input-title" type="text" placeholder="Title" class="input-form">
+                    <input id="input-author" type="text" placeholder="Author" class="input-form">
+                    <span class="form-span"><input id="btn-add" type="button" value="Add" class="form-add-btn"></span>
+                </form>
         </section>
-
     </main>
     <footer>
 
