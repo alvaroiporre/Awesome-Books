@@ -1,3 +1,76 @@
 * {
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+.books {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px solid black;
+  width: 80%;
+}
+
+.book-1 {
+  padding: 7px;
+  display: flex;
+  gap: 5px;
+  background-color: rgb(224, 218, 218);
+  align-items: center;
+}
+
+.span-remove {
+  display: flex;
+  justify-content: end;
+  flex: 1;
+}
+
+.page-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-books {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-remove {
+  height: 20px;
+  margin-right: 0px;
+  box-shadow: -3px 3px 3px;
+
+}
+
+.add-book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fa-thin {
+  border: 2px solid rgb(168, 164, 164);
+  width: 20%;
+  margin: 20px;
+}
+
+.form-elements {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap:7px;
+}
+
+.form-add-btn {
+  width: 20%;
+  box-shadow: -3px 3px 3px;
+}
+
+.form-span {
+  display: flex;
+  justify-content: end;
+}
+

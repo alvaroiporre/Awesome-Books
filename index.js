@@ -14,11 +14,11 @@ class Books {
         booksContainer.innerHTML = '';
         this.bookList.forEach((item) => {
           booksContainer.innerHTML += `
-                  <div class="book" id="${item.id}">
+                  <div class="book book-1" id="${item.id}">
                       <p class="title">${item.title}</p>
+                      <p class="title">by</p>
                       <p class="author">${item.author}</p>
-                      <input class="btn-remove" onclick=books.remove(${item.id}) type="button" value="Remove">
-                      <hr>
+                      <span class="span-remove"><input class="btn-remove" onclick=books.remove(${item.id}) type="button" value="Remove"></span>
                   </div>
               `;
         });
