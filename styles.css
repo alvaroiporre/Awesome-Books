@@ -124,6 +124,18 @@ footer {
   border: black solid 2px;
 }
 
+.contact, .add-book {
+  min-height: 250px;
+}
+
 .contact h2 {
   text-align: center;
+}
+
+.contact-info {
+  margin-top: 30px;
+}
+
+.copy-right {
+  padding: 8px;
 }
