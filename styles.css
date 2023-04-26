@@ -4,6 +4,25 @@
   box-sizing: border-box;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 5px;
+  border: black solid 2px;
+}
+
+.menu li {
+  list-style: none;
+  border-left: black solid 1px;
+  padding-left: 10px;
+}
+
+.menu {
+  display: flex;
+  gap: 15px;
+}
+
 .books {
   display: flex;
   justify-content: center;
@@ -39,8 +58,17 @@
   align-items: center;
 }
 
-.all-books {
+body {
   display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
@@ -78,4 +106,37 @@
 .form-span {
   display: flex;
   justify-content: end;
+}
+
+.hide {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+footer {
+  bottom: 0;
+  margin: 5px;
+  border: black solid 2px;
+}
+
+.contact,
+.add-book {
+  min-height: 250px;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact-info {
+  margin-top: 30px;
+}
+
+.copy-right {
+  padding: 8px;
 }

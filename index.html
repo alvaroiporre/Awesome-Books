@@ -10,37 +10,41 @@
 </head>
 <body>
     <header>
-        <h1 class="page-title">All awesome books</h1>
+        <nav class="navbar">
+            <a href="#">Awesome Books</a>
+            <ul class="menu">
+                <li><a href="#" id="menu-list">List</a></li>
+                <li><a href="#" id="menu-add">Add New</a></li>
+                <li><a href="#" id="menu-contact">Contact</a></li>
+            </ul>
+        </nav>
+        
     </header>
-    <main>
-        <div class="all-books">
+    <main class="main">
             <section class="books" id="books">
-                    <div class="book-1">
-                        <p class="title">Title</p>
-                        <p class="title">by</p>
-                        <p class="author">Author</p>
-                        <span class="span-remove"><input class="btn-remove" type="button" value="Remove"></span>
-                    </div>
-                    <div class="book-2">
-                        <p class="title">Title</p>
-                        <p class="title">by</p>
-                        <p class="author">Author</p>
-                        <span class="span-remove"><input class="btn-remove" type="button" value="Remove"></span>
-                    </div>
+                <h1 class="page-title">All awesome books</h1>
             </section>
-        </div>
         <section class="add-book" id="add-book">
-            <i class="fa-thin fa-horizontal-rule"></i>
             <h2 class="ad-new-book">Add a new book</h2>
-                <form action="" method="POST" class="form-elements">
-                    <input id="input-title" type="text" placeholder="Title" class="input-form">
-                    <input id="input-author" type="text" placeholder="Author" class="input-form">
-                    <span class="form-span"><input id="btn-add" type="button" value="Add" class="form-add-btn"></span>
-                </form>
+            <form action="" method="POST" class="form-elements">
+                <input id="input-title" type="text" placeholder="Title" class="input-form">
+                <input id="input-author" type="text" placeholder="Author" class="input-form">
+                <span class="form-span"><input id="btn-add" type="button" value="Add" class="form-add-btn"></span>
+            </form>
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="contact-info">Contact Information</h2> <br>
+            <p>Do you have any questions or you just want to say Hello?<br>You can reach out to us! </p><br>
+            <ul class="contact-details">
+                <li>Our email: mail@mail.com</li>
+                <li>Our phone number: 07066100601223</li>
+                <li>Our address: Streetname 22, 84503 City, Country</li>
+            </ul>
+
         </section>
     </main>
     <footer>
-
+        <p class="copy-right">Copyright ...</p>
     </footer>
     <script src="index.js"></script>
 </body>
