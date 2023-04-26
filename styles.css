@@ -13,9 +13,9 @@
 }
 
 .menu li {
- list-style: none;
- border-left: black solid 1px;
- padding-left: 10px;
+  list-style: none;
+  border-left: black solid 1px;
+  padding-left: 10px;
 }
 
 .menu {
@@ -109,7 +109,7 @@ body {
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 a {
@@ -124,7 +124,8 @@ footer {
   border: black solid 2px;
 }
 
-.contact, .add-book {
+.contact,
+.add-book {
   min-height: 250px;
 }
 

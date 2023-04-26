@@ -12,7 +12,6 @@ const menuList = document.getElementById('menu-list');
 const menuAdd = document.getElementById('menu-add');
 const menuContact = document.getElementById('menu-contact');
 
-
 function Book(ids, title, author) {
   this.id = ids;
   this.title = title;
@@ -69,29 +68,29 @@ btnAdd.addEventListener('click', () => {
 });
 
 function hide() {
-    if(!booksContainer.classList.contains('hide')) booksContainer.classList.add('hide');
-    if(!addContainer.classList.contains('hide')) addContainer.classList.add('hide');
-    if(!contactContainer.classList.contains('hide')) contactContainer.classList.add('hide');
+  if (!booksContainer.classList.contains('hide')) booksContainer.classList.add('hide');
+  if (!addContainer.classList.contains('hide')) addContainer.classList.add('hide');
+  if (!contactContainer.classList.contains('hide')) contactContainer.classList.add('hide');
 }
 
 function showMain() {
-    hide();
-    books.updateBooks();
-    booksContainer.classList.remove('hide');
+  hide();
+  books.updateBooks();
+  booksContainer.classList.remove('hide');
 }
 
 menuList.addEventListener('click', () => {
-    showMain();
+  showMain();
 });
 
 menuAdd.addEventListener('click', () => {
-    hide();
-    addContainer.classList.remove('hide');
+  hide();
+  addContainer.classList.remove('hide');
 });
 
 menuContact.addEventListener('click', () => {
-    hide();
-    contactContainer.classList.remove('hide');
+  hide();
+  contactContainer.classList.remove('hide');
 });
 
 showMain();
