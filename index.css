@@ -18,6 +18,11 @@
   padding-left: 10px;
 }
 
+.date {
+  text-align: end;
+  padding: 10px;
+}
+
 .menu {
   display: flex;
   gap: 15px;
