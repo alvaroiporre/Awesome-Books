@@ -1,5 +1,6 @@
-import { Book } from './Book.js';
-import { Books } from './Books.js';
+import Book from './Book.js';
+import Books from './Books.js';
+import { DateTime } from './node_modules/luxon/src/luxon.js';
 
 let id = localStorage.id ? Number(localStorage.id) : 0;
 
@@ -15,7 +16,11 @@ const menuList = document.getElementById('menu-list');
 const menuAdd = document.getElementById('menu-add');
 const menuContact = document.getElementById('menu-contact');
 
+const dateText = document.getElementById('date');
+
 const books = new Books(booksContainer);
+
+dateText.textContent = DateTime.now().toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
 
 btnAdd.addEventListener('click', () => {
   const newBook = new Book(id, inputTitle.value, inputAuthor.value);
@@ -30,19 +35,19 @@ btnAdd.addEventListener('click', () => {
 
 window.remove = (id) => {
   books.remove(id);
-}
+};
 
 const hide = () => {
   if (!booksContainer.classList.contains('hide')) booksContainer.classList.add('hide');
   if (!addContainer.classList.contains('hide')) addContainer.classList.add('hide');
   if (!contactContainer.classList.contains('hide')) contactContainer.classList.add('hide');
-}
+};
 
 const showMain = () => {
   hide();
   books.updateBooks();
   booksContainer.classList.remove('hide');
-}
+};
 
 menuList.addEventListener('click', () => {
   showMain();
