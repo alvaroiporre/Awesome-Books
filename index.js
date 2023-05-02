@@ -1,5 +1,5 @@
-import Book from './Book.js';
-import Books from './Books.js';
+import Book from './modules/Book.js';
+import Books from './modules/Books.js';
 import { DateTime } from './node_modules/luxon/src/luxon.js';
 
 let id = localStorage.id ? Number(localStorage.id) : 0;
